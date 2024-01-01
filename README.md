@@ -37,3 +37,23 @@ Adding a Task: Enter the task in the input field and click 'Add'.
 Editing a Task: Click on the 'Edit' link next to any task to modify it.
 Deleting a Task: Click on the 'Delete' link to remove a task from the list.
 Marking a Task as Done: Click on the checkbox next to the task.
+
+# First time using app (one time needed only)
+Create a New PostgreSQL Role:
+Open a terminal and run the following commands:
+
+
+# Copy code
+psql postgres
+CREATE ROLE postgres WITH LOGIN PASSWORD 'postgres';
+ALTER ROLE postgres CREATEDB;
+# Create the Database:
+Still in the PostgreSQL command line, create a new database:
+
+
+# Copy code
+CREATE DATABASE todolistdb;
+# Exit the PostgreSQL Command Line:
+Type \q and press Enter to exit.
+
+
