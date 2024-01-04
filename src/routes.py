@@ -1,7 +1,7 @@
 # app/routes.py
 from flask import render_template, request, redirect, url_for
-from app import app, db
-from app.models import Todo
+from src import app, db
+from src.models import Todo
 
 @app.route("/")
 def index():

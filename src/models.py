@@ -1,5 +1,5 @@
 # app/models.py
-from app import db
+from src import db
 
 class Todo(db.Model):
     __tablename__ = 'todos'
