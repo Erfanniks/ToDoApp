@@ -14,16 +14,16 @@
                 <input type="checkbox" name="done" {% if todo.done %} checked {% endif %} disabled>
                 <span {% if todo.done %} style="text-decoration: line-through" {% endif %}>{{ todo.task }}</span>
                 <!-- Link to edit page -->
-                <a href="{{ url_for('edit', todo_id=todo.id) }}">Edit</a>
+                <a href="{{ url_for('main.edit', todo_id=todo.id) }}">Edit</a>
                 <!-- Link to mark as done -->
-                <a href="{{ url_for('done', todo_id=todo.id) }}">Done</a>
+                <a href="{{ url_for('main.done', todo_id=todo.id) }}">Done</a>
                 <!-- Link to delete -->
-                <a href="{{ url_for('delete', todo_id=todo.id) }}">Delete</a>
+                <a href="{{ url_for('main.delete', todo_id=todo.id) }}">Delete</a>
             </li>
         {% endfor %}
     </ul>
     <!-- Add Todo Form -->
-    <form action="{{ url_for('add') }}" method="post">
+    <form action="{{ url_for('main.add') }}" method="post">
         <input type="text" name="todo">
         <button type="submit">Add Todo</button>
     </form>

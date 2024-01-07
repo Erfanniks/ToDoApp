@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <form action="{{ url_for('edit', todo_id=todo.id) }}" method="post">
+    <form action="{{ url_for('main.edit', todo_id=todo.id) }}" method="post">
         <input type="text" name="todo" value="{{ todo.task }}">
         <button type="submit">Save</button>
     </form>
