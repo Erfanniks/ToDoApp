@@ -3,8 +3,8 @@ import os
 
 # Database connection parameters
 DB_USER = os.environ.get('DB_USER', 'postgres')
-DB_PASSWORD = os.environ.get('DB_PASSWORD', 'potgres')
-DB_HOST = os.environ.get('DB_HOST', 'localhost')
+DB_PASSWORD = os.environ.get('DB_PASSWORD', 'postgres')
+DB_HOST = os.environ.get('DB_HOST', 'postgres')
 DB_PORT = os.environ.get('DB_PORT', '5432')  # Default port for PostgreSQL
 DB_NAME = os.environ.get('DB_NAME', 'todolistdb')
 
